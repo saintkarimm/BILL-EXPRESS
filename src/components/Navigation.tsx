@@ -155,18 +155,18 @@ export default function Navigation({ scrollY }: NavigationProps) {
                   <Menu className="w-6 h-6" />
                 </button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[350px] bg-white">
-                <SheetHeader className="pb-4">
+              <SheetContent side="right" className="w-[280px] sm:w-[320px] bg-white p-0">
+                <SheetHeader className="p-4 border-b border-gray-100">
                   <SheetTitle className="text-left font-bold text-lg">Menu</SheetTitle>
                 </SheetHeader>
-                <div className="flex flex-col h-full">
-                  <nav className="flex flex-col gap-4">
+                <div className="flex flex-col h-[calc(100%-65px)]">
+                  <nav className="flex-1 overflow-y-auto px-4 py-2">
                     {navLinks.map((link) => (
                       <Link
                         key={link.name}
                         to={link.href}
                         onClick={() => setMobileMenuOpen(false)}
-                        className={`text-lg font-medium py-2 border-b border-gray-100 ${
+                        className={`block text-base font-medium py-3 border-b border-gray-50 hover:text-[#D7263D] transition-colors ${
                           isActive(link.href) ? 'text-[#D7263D]' : 'text-[#111111]'
                         }`}
                       >
@@ -174,14 +174,14 @@ export default function Navigation({ scrollY }: NavigationProps) {
                       </Link>
                     ))}
                   </nav>
-                  <div className="mt-auto pt-8">
+                  <div className="p-4 border-t border-gray-100 space-y-3">
                     {!isAuthenticated && (
                       <Link
                         to="/login"
                         onClick={() => setMobileMenuOpen(false)}
-                        className="flex items-center justify-center gap-2 w-full py-3 bg-[#D7263D] text-white rounded-lg font-medium mb-4"
+                        className="flex items-center justify-center gap-2 w-full py-2.5 bg-[#D7263D] text-white rounded-lg font-medium text-sm"
                       >
-                        <User className="w-5 h-5" />
+                        <User className="w-4 h-4" />
                         Login
                       </Link>
                     )}
@@ -189,9 +189,9 @@ export default function Navigation({ scrollY }: NavigationProps) {
                       href="https://wa.me/233546757801?text=Hello%20Bill%20Express%20Logistics%20,%20I%20would%20like%20to%20ship%20a%20package%20from%20USA%20to%20Ghana"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 w-full py-3 bg-green-500 text-white rounded-lg font-medium"
+                      className="flex items-center justify-center gap-2 w-full py-2.5 bg-green-500 text-white rounded-lg font-medium text-sm"
                     >
-                      <Phone className="w-5 h-5" />
+                      <Phone className="w-4 h-4" />
                       WhatsApp Us
                     </a>
                   </div>
