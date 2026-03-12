@@ -146,6 +146,9 @@ export default function HeroSection() {
                 src="/images/hero_drone.jpg"
                 alt="Logistics drone delivery"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
               />
               
               {/* Badge */}

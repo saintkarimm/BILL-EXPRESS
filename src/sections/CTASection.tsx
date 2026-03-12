@@ -62,6 +62,8 @@ export default function CTASection() {
                 src="/images/cta_truck.jpg"
                 alt="Delivery truck"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
+                loading="lazy"
+                decoding="async"
               />
               
               {/* Overlay */}

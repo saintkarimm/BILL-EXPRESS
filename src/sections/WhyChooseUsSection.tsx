@@ -115,6 +115,8 @@ export default function WhyChooseUsSection() {
                 src="/images/why_warehouse.jpg"
                 alt="Warehouse team"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
+                loading="lazy"
+                decoding="async"
               />
               
               {/* Play Button */}
@@ -135,6 +137,8 @@ export default function WhyChooseUsSection() {
                 src="/images/why_worker.jpg"
                 alt="Logistics worker"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
 

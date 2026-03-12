@@ -124,6 +124,8 @@ export default function ProcessSection() {
                 src="/images/process_plane.jpg"
                 alt="Cargo plane"
                 className="w-full h-[500px] lg:h-[600px] object-cover"
+                loading="lazy"
+                decoding="async"
               />
               
               {/* Overlay Badge */}
