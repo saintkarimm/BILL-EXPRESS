@@ -7,6 +7,8 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
+  SheetTitle,
+  SheetHeader,
 } from '@/components/ui/sheet';
 import {
   DropdownMenu,
@@ -153,11 +155,11 @@ export default function Navigation({ scrollY }: NavigationProps) {
                   <Menu className="w-6 h-6" />
                 </button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[350px]">
+              <SheetContent side="right" className="w-[300px] sm:w-[350px] bg-white">
+                <SheetHeader className="pb-4">
+                  <SheetTitle className="text-left font-bold text-lg">Menu</SheetTitle>
+                </SheetHeader>
                 <div className="flex flex-col h-full">
-                  <div className="flex items-center justify-between mb-8">
-                    <span className="font-bold text-lg">Menu</span>
-                  </div>
                   <nav className="flex flex-col gap-4">
                     {navLinks.map((link) => (
                       <Link
