@@ -10,6 +10,7 @@ import DashboardPage from './pages/DashboardPage';
 import AdminPage from './pages/AdminPage';
 import LoginPage from './pages/LoginPage';
 import ContactPage from './pages/ContactPage';
+import CartPage from './pages/CartPage';
 import WhatsAppButton from './components/WhatsAppButton';
 import Chatbot from './components/Chatbot';
 import { AuthProvider } from './contexts/AuthContext';
@@ -42,6 +43,7 @@ function App() {
               <Route path="/admin" element={<AdminPage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/cart" element={<CartPage />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
             <WhatsAppButton />

@@ -95,7 +95,7 @@ export default function Navigation({ scrollY }: NavigationProps) {
           <div className="flex items-center gap-4">
             {/* Cart */}
             <Link
-              to="/shop"
+              to="/cart"
               className="relative p-2 rounded-full hover:bg-gray-100 transition-colors"
             >
               <ShoppingCart className={`w-5 h-5 ${isScrolled ? 'text-[#1D2F42]' : 'text-[#1D2F42]'}`} />

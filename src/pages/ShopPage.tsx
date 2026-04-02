@@ -145,8 +145,8 @@ export default function ShopPage() {
           
           {/* Cart Badge */}
           <Link
-            to="/shop"
-            className="flex items-center gap-2 px-5 py-3 bg-white rounded-xl card-shadow w-fit"
+            to="/cart"
+            className="flex items-center gap-2 px-5 py-3 bg-white rounded-xl card-shadow w-fit hover:shadow-md transition-shadow"
           >
             <ShoppingCart className="w-5 h-5 text-[#1D2F42]" />
             <span className="font-semibold text-[#1D2F42]">{getCartCount()} items</span>
