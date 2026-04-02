@@ -8,33 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {
-    id: 'electronics',
-    icon: Smartphone,
-    title: 'Electronic Shop',
-    description: 'Buy gadgets and electronics including phones, laptops, tablets, and accessories at competitive prices.',
-    image: '/images/product_phone.jpg',
-    link: '/shop',
-    color: 'bg-purple-500'
-  },
-  {
-    id: 'packaging',
-    icon: Package,
-    title: 'Packaging Supplies',
-    description: 'Professional packaging materials and services to ensure your items are protected during transit.',
-    image: '/images/service_warehousing.jpg',
-    link: '/contact',
-    color: 'bg-orange-500'
-  },
-  {
-    id: 'cargo',
-    icon: Ship,
-    title: 'Cargo Shipping',
-    description: 'Ship packages from USA to Ghana with our reliable cargo services. Safe and timely delivery guaranteed.',
-    image: '/images/service_ocean.jpg',
-    link: '/tracking',
-    color: 'bg-blue-500'
-  },
-  {
     id: 'freight',
     icon: Plane,
     title: 'Freight Forwarding',
@@ -42,6 +15,33 @@ const services = [
     image: '/images/service_air.jpg',
     link: '/contact',
     color: 'bg-[#D7263D]'
+  },
+  {
+    id: 'customs',
+    icon: Package,
+    title: 'Customs Brokerage',
+    description: 'Expert customs clearance services to ensure smooth import and export operations.',
+    image: '/images/service_warehousing.jpg',
+    link: '/contact',
+    color: 'bg-orange-500'
+  },
+  {
+    id: 'warehousing',
+    icon: Warehouse,
+    title: 'Warehousing & Distribution',
+    description: 'Secure storage solutions and efficient distribution networks for your goods.',
+    image: '/images/why_warehouse.jpg',
+    link: '/contact',
+    color: 'bg-blue-500'
+  },
+  {
+    id: 'supply-chain',
+    icon: Smartphone,
+    title: 'Supply Chain Optimization',
+    description: 'Streamline your supply chain with our expert consulting and management services.',
+    image: '/images/service_transport.jpg',
+    link: '/contact',
+    color: 'bg-purple-500'
   }
 ];
 
@@ -86,7 +86,7 @@ export default function ServicesSection() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="label-text text-[#D7263D] mb-4 block">Our Services</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] mb-4">
-            BILL EXPRESS BEST SERVICES
+            HAYYU GOLDCOAST BEST SERVICES
           </h2>
           <p className="text-[#6F6F6F] text-lg">
             Comprehensive logistics solutions tailored to meet your shipping and business needs.

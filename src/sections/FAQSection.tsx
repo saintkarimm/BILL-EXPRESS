@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 const faqs = [
   {
     question: 'Can I ship items from the USA to Ghana?',
-    answer: 'Yes, Bill Express Logistics specializes in shipping packages safely from the USA to Ghana. We handle all customs documentation and ensure your items arrive securely and on time.'
+    answer: 'Yes, Hayyu GoldCoast Logistics and Transport specializes in shipping packages safely from the USA to Ghana. We handle all customs documentation and ensure your items arrive securely and on time.'
   },
   {
     question: 'Do you sell electronics?',
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: 'Where are you located?',
-    answer: 'Our office is located at C22/U/26 Community 22, Tema, Ghana. You can also reach us by phone at +233 54 675 7801 or email at billwealth1@gmail.com.'
+    answer: 'Our office is located at Lakeside Community 1, NikaNika. You can also reach us by phone at 025 772 1337 or email at info@hayyugoldcoast.com.'
   },
   {
     question: 'How do I track my shipment?',
@@ -89,7 +89,7 @@ export default function FAQSection() {
               </div>
               <div>
                 <p className="font-semibold text-[#111111]">Still have questions?</p>
-                <p className="text-sm text-[#6F6F6F]">Contact us at +233 54 675 7801</p>
+                <p className="text-sm text-[#6F6F6F]">Contact us at 025 772 1337</p>
               </div>
             </div>
           </div>

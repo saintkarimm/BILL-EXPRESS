@@ -9,7 +9,7 @@ const testimonials = [
   {
     name: 'Ato K.',
     role: 'Retail Business Owner',
-    content: 'Bill Express turned our chaotic shipping schedule into a predictable system. Their tracking is accurate and deliveries are always on time.',
+    content: 'Hayyu GoldCoast turned our chaotic shipping schedule into a predictable system. Their tracking is accurate and deliveries are always on time.',
     rating: 5
   },
   {

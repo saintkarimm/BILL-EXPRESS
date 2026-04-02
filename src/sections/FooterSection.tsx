@@ -11,12 +11,12 @@ const quickLinks = [
 ];
 
 const services = [
-  { name: 'Cargo Shipping', href: '/#services' },
   { name: 'Freight Forwarding', href: '/#services' },
-  { name: 'Electronic Shop', href: '/shop' },
-  { name: 'Packaging Supplies', href: '/contact' },
-  { name: 'Warehousing', href: '/#services' },
-  { name: 'Door-to-Door Delivery', href: '/contact' }
+  { name: 'Customs Brokerage', href: '/#services' },
+  { name: 'Warehousing & Distribution', href: '/#services' },
+  { name: 'Supply Chain Optimization', href: '/#services' },
+  { name: 'Import & Export Handling', href: '/contact' },
+  { name: 'Oil & Gas Logistics', href: '/contact' }
 ];
 
 export default function FooterSection() {
@@ -32,12 +32,11 @@ export default function FooterSection() {
                 <Package className="w-6 h-6 text-white" />
               </div>
               <span className="font-bold text-lg tracking-tight">
-                BILL EXPRESS
+                HAYYU GOLDCoast
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Fast and efficient logistics services. We ship packages from the USA to Ghana 
-              and provide cargo and freight forwarding services.
+              Global trade made simple. We provide comprehensive logistics solutions including freight forwarding, customs brokerage, warehousing, and supply chain optimization.
             </p>
             <div className="flex gap-3">
               {[
@@ -98,19 +97,19 @@ export default function FooterSection() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#D7263D] flex-shrink-0 mt-0.5" />
                 <span className="text-gray-400 text-sm">
-                  C22/U/26 Community 22, Tema, Ghana
+                  Lakeside Community 1, NikaNika
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#D7263D] flex-shrink-0" />
-                <a href="tel:+233546757801" className="text-gray-400 hover:text-[#D7263D] transition-colors text-sm">
-                  +233 54 675 7801
+                <a href="tel:+233257721337" className="text-gray-400 hover:text-[#D7263D] transition-colors text-sm">
+                  025 772 1337
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#D7263D] flex-shrink-0" />
-                <a href="mailto:billwealth1@gmail.com" className="text-gray-400 hover:text-[#D7263D] transition-colors text-sm">
-                  billwealth1@gmail.com
+                <a href="mailto:info@hayyugoldcoast.com" className="text-gray-400 hover:text-[#D7263D] transition-colors text-sm">
+                  info@hayyugoldcoast.com
                 </a>
               </li>
             </ul>
@@ -123,7 +122,7 @@ export default function FooterSection() {
         <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © {new Date().getFullYear()} Bill Express Logistics. All rights reserved.
+              © {new Date().getFullYear()} Hayyu GoldCoast Logistics and Transport. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link to="#" className="text-gray-400 hover:text-white transition-colors text-sm">

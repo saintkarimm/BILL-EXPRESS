@@ -102,7 +102,7 @@ export default function CTASection() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a
-                href="tel:+233546757801"
+                href="tel:+233257721337"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#111111] border-2 border-[#111111] rounded-xl font-semibold text-sm uppercase tracking-wide hover:bg-[#111111] hover:text-white transition-all"
               >
                 <Phone className="w-5 h-5" />
@@ -114,11 +114,11 @@ export default function CTASection() {
             <div className="animate-item flex flex-col sm:flex-row gap-6 pt-8 border-t border-gray-200">
               <div>
                 <p className="text-sm text-[#6F6F6F] mb-1">Phone</p>
-                <p className="font-semibold text-[#111111]">+233 54 675 7801</p>
+                <p className="font-semibold text-[#111111]">025 772 1337</p>
               </div>
               <div>
                 <p className="text-sm text-[#6F6F6F] mb-1">Email</p>
-                <p className="font-semibold text-[#111111]">billwealth1@gmail.com</p>
+                <p className="font-semibold text-[#111111]">info@hayyugoldcoast.com</p>
               </div>
             </div>
           </div>

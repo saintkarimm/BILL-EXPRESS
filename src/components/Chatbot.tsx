@@ -11,23 +11,23 @@ interface Message {
 const botResponses: Record<string, string> = {
   'ship': 'We ship packages from the USA to Ghana safely and efficiently. You can track your shipment in real-time on our Tracking page. Would you like to get a quote?',
   'usa': 'Yes, we specialize in shipping from the USA to Ghana. Our cargo and freight forwarding services ensure your packages arrive safely.',
-  'ghana': 'We are based in Ghana at C22/U/26 Community 22, Tema. We ship packages from the USA to Ghana and provide local delivery services.',
-  'location': 'Our office is located at C22/U/26 Community 22, Tema, Ghana. You can also reach us at +233 54 675 7801.',
-  'address': 'Our office is located at C22/U/26 Community 22, Tema, Ghana.',
+  'ghana': 'We are based in Ghana at Lakeside Community 1, NikaNika. We ship packages from the USA to Ghana and provide local delivery services.',
+  'location': 'Our office is located at Lakeside Community 1, NikaNika. You can also reach us at 025 772 1337.',
+  'address': 'Our office is located at Lakeside Community 1, NikaNika.',
   'electronics': 'Yes, we sell electronic gadgets and accessories! Visit our Shop page to browse our selection of phones, laptops, tablets, and more.',
   'shop': 'You can buy electronics from our online shop. We have phones, laptops, tablets, smartwatches, and accessories. Check out the Shop page!',
   'track': 'You can track your shipment by entering your tracking number on our Tracking page. You\'ll see real-time updates on your package location.',
   'tracking': 'To track your shipment, go to the Tracking page and enter your tracking number. We provide live updates at every stage.',
   'price': 'Our pricing depends on the size, weight, and destination of your package. Contact us for a free quote!',
   'cost': 'Shipping costs vary based on package details. Please contact us or use our quote request form for accurate pricing.',
-  'contact': 'You can reach us at +233 54 675 7801 or email us at billwealth1@gmail.com. Our office is at C22/U/26 Community 22, Tema.',
-  'phone': 'You can reach us at +233 54 675 7801. We\'re available 24/7 for your logistics needs.',
-  'email': 'You can email us at billwealth1@gmail.com. We typically respond within 24 hours.',
+  'contact': 'You can reach us at 025 772 1337 or email us at info@hayyugoldcoast.com. Our office is at Lakeside Community 1, NikaNika.',
+  'phone': 'You can reach us at 025 772 1337. We\'re available 24/7 for your logistics needs.',
+  'email': 'You can email us at info@hayyugoldcoast.com. We typically respond within 24 hours.',
   'time': 'Delivery time depends on the shipping method. Air freight typically takes 5-10 business days, while sea freight takes 4-8 weeks.',
   'delivery': 'We offer door-to-door delivery services in Ghana. Your package will be delivered directly to your specified address.',
   'packaging': 'We provide professional packaging supplies and services to ensure your items are protected during transit.',
   'customs': 'Yes, we handle customs documentation and clearance for all international shipments to ensure smooth delivery.',
-  'hello': 'Hello! Welcome to Bill Express Logistics. How can I help you today? I can assist with shipping from USA to Ghana, tracking, electronics, and more.',
+  'hello': 'Hello! Welcome to Hayyu GoldCoast Logistics and Transport. How can I help you today? I can assist with shipping from USA to Ghana, tracking, electronics, and more.',
   'hi': 'Hi there! How can I help you with your logistics needs today?',
   'help': 'I can help you with:\n- Shipping from USA to Ghana\n- Tracking your shipments\n- Buying electronics\n- Getting quotes\n- Contact information\nWhat would you like to know?',
 };
@@ -51,7 +51,7 @@ export default function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 'welcome',
-      text: 'Hello! Welcome to Bill Express Logistics. How can I help you today?',
+      text: 'Hello! Welcome to Hayyu GoldCoast Logistics and Transport. How can I help you today?',
       sender: 'bot',
       timestamp: new Date()
     }
@@ -125,7 +125,7 @@ export default function Chatbot() {
                 <Bot className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold text-sm">Bill Express AI</h3>
+                <h3 className="font-semibold text-sm">Hayyu GoldCoast AI</h3>
                 <p className="text-xs text-white/70">Online</p>
               </div>
             </div>

@@ -68,7 +68,7 @@ export default function Navigation({ scrollY }: NavigationProps) {
             <span className={`font-bold text-lg tracking-tight transition-colors ${
               isScrolled ? 'text-[#111111]' : 'text-[#111111]'
             }`}>
-              BILL EXPRESS
+              HAYYU GOLDCoast
             </span>
           </Link>
 
@@ -186,7 +186,7 @@ export default function Navigation({ scrollY }: NavigationProps) {
                       </Link>
                     )}
                     <a
-                      href="https://wa.me/233546757801?text=Hello%20Bill%20Express%20Logistics%20,%20I%20would%20like%20to%20ship%20a%20package%20from%20USA%20to%20Ghana"
+                      href="https://wa.me/233257721337?text=Hello%20Hayyu%20GoldCoast%20Logistics%20,%20I%20would%20like%20to%20inquire%20about%20your%20services"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 w-full py-2.5 bg-green-500 text-white rounded-lg font-medium text-sm"

@@ -97,8 +97,8 @@ export default function HeroSection() {
               ref={subheadRef}
               className="text-lg sm:text-xl text-[#6F6F6F] max-w-xl mb-8 leading-relaxed"
             >
-              Reliable freight forwarding, real-time tracking, and on-time delivery—
-              across cities and borders. We ship packages from the USA to Ghana safely.
+              Reliable freight forwarding, customs brokerage, and supply chain solutions—
+              across cities and borders. Global trade made simple with Hayyu GoldCoast.
             </p>
 
             <div ref={ctaRef} className="flex flex-wrap gap-4">

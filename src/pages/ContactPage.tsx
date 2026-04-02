@@ -46,8 +46,8 @@ export default function ContactPage() {
                   <Phone className="w-6 h-6 text-[#D7263D]" />
                 </div>
                 <h3 className="font-bold text-[#111111] mb-2">Phone</h3>
-                <a href="tel:+233546757801" className="text-[#6F6F6F] hover:text-[#D7263D] transition-colors">
-                  +233 54 675 7801
+                <a href="tel:+233257721337" className="text-[#6F6F6F] hover:text-[#D7263D] transition-colors">
+                  025 772 1337
                 </a>
               </div>
 
@@ -56,8 +56,8 @@ export default function ContactPage() {
                   <Mail className="w-6 h-6 text-[#D7263D]" />
                 </div>
                 <h3 className="font-bold text-[#111111] mb-2">Email</h3>
-                <a href="mailto:billwealth1@gmail.com" className="text-[#6F6F6F] hover:text-[#D7263D] transition-colors">
-                  billwealth1@gmail.com
+                <a href="mailto:info@hayyugoldcoast.com" className="text-[#6F6F6F] hover:text-[#D7263D] transition-colors">
+                  info@hayyugoldcoast.com
                 </a>
               </div>
 
@@ -67,7 +67,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="font-bold text-[#111111] mb-2">Address</h3>
                 <p className="text-[#6F6F6F]">
-                  C22/U/26 Community 22, Tema, Ghana
+                  Lakeside Community 1, NikaNika
                 </p>
               </div>
 
@@ -92,7 +92,7 @@ export default function ContactPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Bill Express Logistics Location"
+                title="Hayyu GoldCoast Logistics Location"
               />
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+233 54 675 7801"
+                    placeholder="025 772 1337"
                     className="w-full px-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#D7263D]"
                   />
                 </div>
