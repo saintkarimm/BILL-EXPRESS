@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Check, Play } from 'lucide-react';
+import { Check } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -108,21 +108,16 @@ export default function WhyChooseUsSection() {
             </div>
           </div>
 
-          {/* Right Image */}
+          {/* Right Video */}
           <div ref={imageRef} className="relative">
             <div className="relative rounded-[28px] overflow-hidden shadow-2xl">
               <img
-                src="/images/why_warehouse.jpg"
-                alt="Warehouse team"
+                src="/video.gif"
+                alt="Warehouse operations"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
-                loading="lazy"
-                decoding="async"
               />
               
-              {/* Play Button */}
-              <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-[#1D2F42] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
-                <Play className="w-8 h-8 text-white ml-1" fill="white" />
-              </button>
+
 
               {/* Stats Card */}
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm p-5 rounded-2xl shadow-lg">
