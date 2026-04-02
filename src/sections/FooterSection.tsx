@@ -124,6 +124,17 @@ export default function FooterSection() {
             <p className="text-gray-400 text-sm text-center md:text-left">
               © {new Date().getFullYear()} Hayyu GoldCoast Logistics and Transport. All rights reserved.
             </p>
+            <p className="text-gray-400 text-sm text-center">
+              Created by{' '}
+              <a
+                href="https://wa.me/233536313276?text=Hello%20SAINTKARIM%20DIGITAL%20AGENCY"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#D8D8D0] hover:text-white transition-colors font-medium"
+              >
+                SAINTKARIM DIGITAL AGENCY
+              </a>
+            </p>
             <div className="flex gap-6">
               <Link to="#" className="text-gray-400 hover:text-white transition-colors text-sm">
                 Privacy Policy
