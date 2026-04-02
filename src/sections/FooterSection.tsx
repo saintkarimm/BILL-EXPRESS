@@ -21,14 +21,14 @@ const services = [
 
 export default function FooterSection() {
   return (
-    <footer className="bg-[#111111] text-white">
+    <footer className="bg-[#1D2F42] text-white">
       {/* Main Footer */}
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-16 lg:py-20">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-[#D7263D] rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#1D2F42] rounded-lg flex items-center justify-center">
                 <Package className="w-6 h-6 text-white" />
               </div>
               <span className="font-bold text-lg tracking-tight">
@@ -48,7 +48,7 @@ export default function FooterSection() {
                 <a
                   key={index}
                   href={social.href}
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#D7263D] transition-colors"
+                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#1D2F42] transition-colors"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
@@ -64,7 +64,7 @@ export default function FooterSection() {
                 <li key={index}>
                   <Link
                     to={link.href}
-                    className="text-gray-400 hover:text-[#D7263D] transition-colors text-sm"
+                    className="text-gray-400 hover:text-[#1D2F42] transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -81,7 +81,7 @@ export default function FooterSection() {
                 <li key={index}>
                   <Link
                     to={service.href}
-                    className="text-gray-400 hover:text-[#D7263D] transition-colors text-sm"
+                    className="text-gray-400 hover:text-[#1D2F42] transition-colors text-sm"
                   >
                     {service.name}
                   </Link>
@@ -95,20 +95,20 @@ export default function FooterSection() {
             <h3 className="font-bold text-lg mb-6">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#D7263D] flex-shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-[#1D2F42] flex-shrink-0 mt-0.5" />
                 <span className="text-gray-400 text-sm">
                   Lakeside Community 1, NikaNika
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-[#D7263D] flex-shrink-0" />
-                <a href="tel:+233257721337" className="text-gray-400 hover:text-[#D7263D] transition-colors text-sm">
+                <Phone className="w-5 h-5 text-[#1D2F42] flex-shrink-0" />
+                <a href="tel:+233257721337" className="text-gray-400 hover:text-[#1D2F42] transition-colors text-sm">
                   025 772 1337
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-[#D7263D] flex-shrink-0" />
-                <a href="mailto:info@hayyugoldcoast.com" className="text-gray-400 hover:text-[#D7263D] transition-colors text-sm">
+                <Mail className="w-5 h-5 text-[#1D2F42] flex-shrink-0" />
+                <a href="mailto:info@hayyugoldcoast.com" className="text-gray-400 hover:text-[#1D2F42] transition-colors text-sm">
                   info@hayyugoldcoast.com
                 </a>
               </li>

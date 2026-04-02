@@ -77,16 +77,16 @@ export default function TestimonialsSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-20 lg:py-32 bg-[#F6F6F6]"
+      className="relative py-20 lg:py-32 bg-[#D8D8D0]"
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="label-text text-[#D7263D] mb-4 block">Testimonials</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] mb-4">
+          <span className="label-text text-[#1D2F42] mb-4 block">Testimonials</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1D2F42] mb-4">
             WHAT OUR CLIENTS SAY ABOUT US
           </h2>
-          <p className="text-[#6F6F6F] text-lg">
+          <p className="text-[#3d5266] text-lg">
             We are proud to keep our partners moving—here is what they have shared.
           </p>
         </div>
@@ -99,8 +99,8 @@ export default function TestimonialsSection() {
               className="testimonial-card bg-white rounded-[24px] p-6 card-shadow card-border hover:translate-y-[-4px] transition-all"
             >
               {/* Quote Icon */}
-              <div className="w-10 h-10 bg-[#D7263D]/10 rounded-full flex items-center justify-center mb-4">
-                <Quote className="w-5 h-5 text-[#D7263D]" />
+              <div className="w-10 h-10 bg-[#1D2F42]/10 rounded-full flex items-center justify-center mb-4">
+                <Quote className="w-5 h-5 text-[#1D2F42]" />
               </div>
 
               {/* Rating */}
@@ -111,7 +111,7 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Content */}
-              <p className="text-[#111111] mb-6 leading-relaxed">
+              <p className="text-[#1D2F42] mb-6 leading-relaxed">
                 "{testimonial.content}"
               </p>
 
@@ -123,8 +123,8 @@ export default function TestimonialsSection() {
                   </span>
                 </div>
                 <div>
-                  <p className="font-semibold text-[#111111]">{testimonial.name}</p>
-                  <p className="text-sm text-[#6F6F6F]">{testimonial.role}</p>
+                  <p className="font-semibold text-[#1D2F42]">{testimonial.name}</p>
+                  <p className="text-sm text-[#3d5266]">{testimonial.role}</p>
                 </div>
               </div>
             </div>

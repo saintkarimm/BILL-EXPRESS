@@ -31,7 +31,7 @@ function App() {
     <AuthProvider>
       <CartProvider>
         <Router>
-          <div className="min-h-screen bg-[#F6F6F6]">
+          <div className="min-h-screen bg-[#D8D8D0]">
             <Navigation scrollY={scrollY} />
             <Routes>
               <Route path="/" element={<HomePage />} />

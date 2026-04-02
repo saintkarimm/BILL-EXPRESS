@@ -48,15 +48,15 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#F6F6F6] pt-24 pb-16 flex items-center justify-center">
+    <main className="min-h-screen bg-[#D8D8D0] pt-24 pb-16 flex items-center justify-center">
       <div className="w-full max-w-md px-4">
         <div className="bg-white rounded-[28px] p-8 card-shadow">
           {/* Header */}
           <div className="text-center mb-8">
-            <h1 className="text-2xl font-black text-[#111111] mb-2">
+            <h1 className="text-2xl font-black text-[#1D2F42] mb-2">
               {isLogin ? 'Welcome Back' : 'Create Account'}
             </h1>
-            <p className="text-[#6F6F6F]">
+            <p className="text-[#3d5266]">
               {isLogin 
                 ? 'Sign in to access your account' 
                 : 'Sign up to start shopping and tracking'}
@@ -67,7 +67,7 @@ export default function LoginPage() {
           <form onSubmit={handleSubmit} className="space-y-4">
             {!isLogin && (
               <div>
-                <label className="block text-sm font-medium text-[#111111] mb-2">
+                <label className="block text-sm font-medium text-[#1D2F42] mb-2">
                   Full Name
                 </label>
                 <div className="relative">
@@ -77,7 +77,7 @@ export default function LoginPage() {
                     placeholder="John Doe"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full pl-12 pr-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#D7263D]"
+                    className="w-full pl-12 pr-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#1D2F42]"
                     required={!isLogin}
                   />
                 </div>
@@ -85,7 +85,7 @@ export default function LoginPage() {
             )}
 
             <div>
-              <label className="block text-sm font-medium text-[#111111] mb-2">
+              <label className="block text-sm font-medium text-[#1D2F42] mb-2">
                 Email Address
               </label>
               <div className="relative">
@@ -95,7 +95,7 @@ export default function LoginPage() {
                   placeholder="you@example.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full pl-12 pr-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#D7263D]"
+                  className="w-full pl-12 pr-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#1D2F42]"
                   required
                 />
               </div>
@@ -103,7 +103,7 @@ export default function LoginPage() {
 
             {!isLogin && (
               <div>
-                <label className="block text-sm font-medium text-[#111111] mb-2">
+                <label className="block text-sm font-medium text-[#1D2F42] mb-2">
                   Phone Number
                 </label>
                 <div className="relative">
@@ -113,7 +113,7 @@ export default function LoginPage() {
                     placeholder="+233 54 675 7801"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full pl-12 pr-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#D7263D]"
+                    className="w-full pl-12 pr-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#1D2F42]"
                     required={!isLogin}
                   />
                 </div>
@@ -121,7 +121,7 @@ export default function LoginPage() {
             )}
 
             <div>
-              <label className="block text-sm font-medium text-[#111111] mb-2">
+              <label className="block text-sm font-medium text-[#1D2F42] mb-2">
                 Password
               </label>
               <div className="relative">
@@ -131,7 +131,7 @@ export default function LoginPage() {
                   placeholder="••••••••"
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                  className="w-full pl-12 pr-12 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#D7263D]"
+                  className="w-full pl-12 pr-12 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#1D2F42]"
                   required
                   minLength={6}
                 />
@@ -148,7 +148,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full py-4 bg-[#D7263D] text-white rounded-xl font-semibold hover:bg-[#b51d32] transition-colors disabled:opacity-50"
+              className="w-full py-4 bg-[#1D2F42] text-white rounded-xl font-semibold hover:bg-[#0f1a25] transition-colors disabled:opacity-50"
             >
               {isLoading ? 'Please wait...' : isLogin ? 'Sign In' : 'Create Account'}
             </button>
@@ -156,11 +156,11 @@ export default function LoginPage() {
 
           {/* Toggle */}
           <div className="mt-6 text-center">
-            <p className="text-[#6F6F6F]">
+            <p className="text-[#3d5266]">
               {isLogin ? "Don't have an account?" : 'Already have an account?'}
               <button
                 onClick={() => setIsLogin(!isLogin)}
-                className="ml-2 text-[#D7263D] font-semibold hover:underline"
+                className="ml-2 text-[#1D2F42] font-semibold hover:underline"
               >
                 {isLogin ? 'Sign Up' : 'Sign In'}
               </button>
@@ -170,7 +170,7 @@ export default function LoginPage() {
           {/* Demo Credentials */}
           {isLogin && (
             <div className="mt-6 p-4 bg-gray-50 rounded-xl">
-              <p className="text-sm text-[#6F6F6F] mb-2">Demo Credentials:</p>
+              <p className="text-sm text-[#3d5266] mb-2">Demo Credentials:</p>
               <div className="space-y-1 text-sm">
                 <p><span className="font-medium">Customer:</span> demo@example.com / demo123</p>
                 <p><span className="font-medium">Admin:</span> admin@billexpress.com / admin123</p>
@@ -182,3 +182,4 @@ export default function LoginPage() {
     </main>
   );
 }
+

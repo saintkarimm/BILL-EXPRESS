@@ -62,11 +62,11 @@ export default function Navigation({ scrollY }: NavigationProps) {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-[#D7263D] rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#1D2F42] rounded-lg flex items-center justify-center">
               <Package className="w-6 h-6 text-white" />
             </div>
             <span className={`font-bold text-lg tracking-tight transition-colors ${
-              isScrolled ? 'text-[#111111]' : 'text-[#111111]'
+              isScrolled ? 'text-[#1D2F42]' : 'text-[#1D2F42]'
             }`}>
               HAYYU GOLDCoast
             </span>
@@ -78,12 +78,12 @@ export default function Navigation({ scrollY }: NavigationProps) {
               <Link
                 key={link.name}
                 to={link.href}
-                className={`text-sm font-medium transition-colors hover:text-[#D7263D] ${
+                className={`text-sm font-medium transition-colors hover:text-[#1D2F42] ${
                   isActive(link.href)
-                    ? 'text-[#D7263D]'
+                    ? 'text-[#1D2F42]'
                     : isScrolled
-                    ? 'text-[#111111]'
-                    : 'text-[#111111]'
+                    ? 'text-[#1D2F42]'
+                    : 'text-[#1D2F42]'
                 }`}
               >
                 {link.name}
@@ -98,9 +98,9 @@ export default function Navigation({ scrollY }: NavigationProps) {
               to="/shop"
               className="relative p-2 rounded-full hover:bg-gray-100 transition-colors"
             >
-              <ShoppingCart className={`w-5 h-5 ${isScrolled ? 'text-[#111111]' : 'text-[#111111]'}`} />
+              <ShoppingCart className={`w-5 h-5 ${isScrolled ? 'text-[#1D2F42]' : 'text-[#1D2F42]'}`} />
               {getCartCount() > 0 && (
-                <span className="absolute -top-1 -right-1 w-5 h-5 bg-[#D7263D] text-white text-xs rounded-full flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 w-5 h-5 bg-[#1D2F42] text-white text-xs rounded-full flex items-center justify-center">
                   {getCartCount()}
                 </span>
               )}
@@ -110,7 +110,7 @@ export default function Navigation({ scrollY }: NavigationProps) {
             {isAuthenticated ? (
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center gap-2 p-2 rounded-full hover:bg-gray-100 transition-colors">
-                  <div className="w-8 h-8 bg-[#D7263D] rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-[#1D2F42] rounded-full flex items-center justify-center">
                     <User className="w-4 h-4 text-white" />
                   </div>
                   <span className="hidden sm:block text-sm font-medium">{user?.name}</span>
@@ -125,7 +125,7 @@ export default function Navigation({ scrollY }: NavigationProps) {
                     </DropdownMenuItem>
                   )}
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem onClick={logout} className="text-[#D7263D]">
+                  <DropdownMenuItem onClick={logout} className="text-[#1D2F42]">
                     Logout
                   </DropdownMenuItem>
                 </DropdownMenuContent>
@@ -133,7 +133,7 @@ export default function Navigation({ scrollY }: NavigationProps) {
             ) : (
               <Link
                 to="/login"
-                className="hidden sm:flex items-center gap-2 px-4 py-2 bg-[#D7263D] text-white rounded-lg text-sm font-medium hover:bg-[#b51d32] transition-colors"
+                className="hidden sm:flex items-center gap-2 px-4 py-2 bg-[#1D2F42] text-white rounded-lg text-sm font-medium hover:bg-[#0f1a25] transition-colors"
               >
                 <User className="w-4 h-4" />
                 Login
@@ -143,7 +143,7 @@ export default function Navigation({ scrollY }: NavigationProps) {
             {/* CTA Button */}
             <Link
               to="/shop"
-              className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-[#111111] text-white rounded-lg text-sm font-medium hover:bg-[#333333] transition-colors"
+              className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-[#1D2F42] text-white rounded-lg text-sm font-medium hover:bg-[#0f1a25] transition-colors"
             >
               Buy Electronics
             </Link>
@@ -166,8 +166,8 @@ export default function Navigation({ scrollY }: NavigationProps) {
                         key={link.name}
                         to={link.href}
                         onClick={() => setMobileMenuOpen(false)}
-                        className={`block text-base font-medium py-3 border-b border-gray-50 hover:text-[#D7263D] transition-colors ${
-                          isActive(link.href) ? 'text-[#D7263D]' : 'text-[#111111]'
+                        className={`block text-base font-medium py-3 border-b border-gray-50 hover:text-[#1D2F42] transition-colors ${
+                          isActive(link.href) ? 'text-[#1D2F42]' : 'text-[#1D2F42]'
                         }`}
                       >
                         {link.name}
@@ -179,7 +179,7 @@ export default function Navigation({ scrollY }: NavigationProps) {
                       <Link
                         to="/login"
                         onClick={() => setMobileMenuOpen(false)}
-                        className="flex items-center justify-center gap-2 w-full py-2.5 bg-[#D7263D] text-white rounded-lg font-medium text-sm"
+                        className="flex items-center justify-center gap-2 w-full py-2.5 bg-[#1D2F42] text-white rounded-lg font-medium text-sm"
                       >
                         <User className="w-4 h-4" />
                         Login
@@ -204,3 +204,4 @@ export default function Navigation({ scrollY }: NavigationProps) {
     </header>
   );
 }
+

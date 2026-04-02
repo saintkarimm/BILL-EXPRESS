@@ -108,7 +108,7 @@ export default function Chatbot() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-24 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#D7263D] text-white rounded-full shadow-lg hover:bg-[#b51d32] hover:scale-110 transition-all duration-300"
+          className="fixed bottom-24 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#1D2F42] text-white rounded-full shadow-lg hover:bg-[#0f1a25] hover:scale-110 transition-all duration-300"
           aria-label="Open chat"
         >
           <MessageSquare className="w-6 h-6" />
@@ -119,7 +119,7 @@ export default function Chatbot() {
       {isOpen && (
         <div className="fixed bottom-24 right-6 z-50 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200 animate-in slide-in-from-bottom-4">
           {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 bg-[#D7263D] text-white">
+          <div className="flex items-center justify-between px-4 py-3 bg-[#1D2F42] text-white">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
                 <Bot className="w-5 h-5" />
@@ -149,8 +149,8 @@ export default function Chatbot() {
                 <div
                   className={`max-w-[80%] px-4 py-2.5 rounded-2xl text-sm whitespace-pre-line ${
                     message.sender === 'user'
-                      ? 'bg-[#D7263D] text-white rounded-br-md'
-                      : 'bg-white text-[#111111] rounded-bl-md shadow-sm border border-gray-100'
+                      ? 'bg-[#1D2F42] text-white rounded-br-md'
+                      : 'bg-white text-[#1D2F42] rounded-bl-md shadow-sm border border-gray-100'
                   }`}
                 >
                   {message.text}
@@ -180,12 +180,12 @@ export default function Chatbot() {
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Type your message..."
-                className="flex-1 px-4 py-2.5 bg-gray-100 border-0 rounded-xl text-sm focus:ring-2 focus:ring-[#D7263D] focus:bg-white transition-all"
+                className="flex-1 px-4 py-2.5 bg-gray-100 border-0 rounded-xl text-sm focus:ring-2 focus:ring-[#1D2F42] focus:bg-white transition-all"
               />
               <button
                 onClick={handleSend}
                 disabled={!inputValue.trim()}
-                className="p-2.5 bg-[#D7263D] text-white rounded-xl hover:bg-[#b51d32] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="p-2.5 bg-[#1D2F42] text-white rounded-xl hover:bg-[#0f1a25] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Send className="w-5 h-5" />
               </button>
@@ -196,3 +196,4 @@ export default function Chatbot() {
     </>
   );
 }
+

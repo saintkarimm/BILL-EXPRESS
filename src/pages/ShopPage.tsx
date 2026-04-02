@@ -130,15 +130,15 @@ export default function ShopPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#F6F6F6] pt-24 pb-16">
+    <main className="min-h-screen bg-[#D8D8D0] pt-24 pb-16">
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-10">
           <div>
-            <h1 className="text-3xl sm:text-4xl font-black text-[#111111] mb-2">
+            <h1 className="text-3xl sm:text-4xl font-black text-[#1D2F42] mb-2">
               Electronics Shop
             </h1>
-            <p className="text-[#6F6F6F]">
+            <p className="text-[#3d5266]">
               Browse our selection of quality gadgets and electronics
             </p>
           </div>
@@ -148,8 +148,8 @@ export default function ShopPage() {
             to="/shop"
             className="flex items-center gap-2 px-5 py-3 bg-white rounded-xl card-shadow w-fit"
           >
-            <ShoppingCart className="w-5 h-5 text-[#D7263D]" />
-            <span className="font-semibold text-[#111111]">{getCartCount()} items</span>
+            <ShoppingCart className="w-5 h-5 text-[#1D2F42]" />
+            <span className="font-semibold text-[#1D2F42]">{getCartCount()} items</span>
           </Link>
         </div>
 
@@ -163,7 +163,7 @@ export default function ShopPage() {
               placeholder="Search products..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-3 bg-white rounded-xl border-0 shadow-sm focus:ring-2 focus:ring-[#D7263D]"
+              className="w-full pl-12 pr-4 py-3 bg-white rounded-xl border-0 shadow-sm focus:ring-2 focus:ring-[#1D2F42]"
             />
           </div>
 
@@ -175,8 +175,8 @@ export default function ShopPage() {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                   selectedCategory === category
-                    ? 'bg-[#D7263D] text-white'
-                    : 'bg-white text-[#111111] hover:bg-gray-100'
+                    ? 'bg-[#1D2F42] text-white'
+                    : 'bg-white text-[#1D2F42] hover:bg-gray-100'
                 }`}
               >
                 {category}
@@ -200,7 +200,7 @@ export default function ShopPage() {
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 left-4 px-3 py-1 bg-[#D7263D] text-white text-xs font-semibold rounded-full">
+                  <div className="absolute top-4 left-4 px-3 py-1 bg-[#1D2F42] text-white text-xs font-semibold rounded-full">
                     {product.category}
                   </div>
                 </Link>
@@ -208,12 +208,12 @@ export default function ShopPage() {
                 {/* Content */}
                 <div className="p-5">
                   <Link to={`/shop/${product.id}`}>
-                    <h3 className="font-bold text-[#111111] mb-2 hover:text-[#D7263D] transition-colors">
+                    <h3 className="font-bold text-[#1D2F42] mb-2 hover:text-[#1D2F42] transition-colors">
                       {product.name}
                     </h3>
                   </Link>
                   
-                  <p className="text-sm text-[#6F6F6F] mb-3 line-clamp-2">
+                  <p className="text-sm text-[#3d5266] mb-3 line-clamp-2">
                     {product.description}
                   </p>
 
@@ -229,20 +229,20 @@ export default function ShopPage() {
                         }`}
                       />
                     ))}
-                    <span className="text-sm text-[#6F6F6F] ml-1">({product.rating})</span>
+                    <span className="text-sm text-[#3d5266] ml-1">({product.rating})</span>
                   </div>
 
                   {/* Price & Action */}
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-2xl font-black text-[#D7263D]">
+                      <p className="text-2xl font-black text-[#1D2F42]">
                         GH₵ {product.price.toLocaleString()}
                       </p>
-                      <p className="text-xs text-[#6F6F6F]">{product.stock} in stock</p>
+                      <p className="text-xs text-[#3d5266]">{product.stock} in stock</p>
                     </div>
                     <button
                       onClick={() => handleAddToCart(product)}
-                      className="w-12 h-12 bg-[#111111] text-white rounded-xl flex items-center justify-center hover:bg-[#D7263D] transition-colors"
+                      className="w-12 h-12 bg-[#1D2F42] text-white rounded-xl flex items-center justify-center hover:bg-[#1D2F42] transition-colors"
                     >
                       <Plus className="w-5 h-5" />
                     </button>
@@ -253,13 +253,13 @@ export default function ShopPage() {
           </div>
         ) : (
           <div className="text-center py-20">
-            <p className="text-xl text-[#6F6F6F]">No products found</p>
+            <p className="text-xl text-[#3d5266]">No products found</p>
             <button
               onClick={() => {
                 setSelectedCategory('All');
                 setSearchQuery('');
               }}
-              className="mt-4 px-6 py-3 bg-[#D7263D] text-white rounded-xl font-medium"
+              className="mt-4 px-6 py-3 bg-[#1D2F42] text-white rounded-xl font-medium"
             >
               Clear Filters
             </button>
@@ -269,3 +269,4 @@ export default function ShopPage() {
     </main>
   );
 }
+

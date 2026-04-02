@@ -14,7 +14,7 @@ const services = [
     description: 'Efficient international logistics solutions with air, ocean, and road freight options.',
     image: '/images/service_air.jpg',
     link: '/contact',
-    color: 'bg-[#D7263D]'
+    color: 'bg-[#1D2F42]'
   },
   {
     id: 'customs',
@@ -79,16 +79,16 @@ export default function ServicesSection() {
     <section
       ref={sectionRef}
       id="services"
-      className="relative py-20 lg:py-32 bg-[#F6F6F6]"
+      className="relative py-20 lg:py-32 bg-[#D8D8D0]"
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="label-text text-[#D7263D] mb-4 block">Our Services</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] mb-4">
+          <span className="label-text text-[#1D2F42] mb-4 block">Our Services</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1D2F42] mb-4">
             HAYYU GOLDCOAST BEST SERVICES
           </h2>
-          <p className="text-[#6F6F6F] text-lg">
+          <p className="text-[#3d5266] text-lg">
             Comprehensive logistics solutions tailored to meet your shipping and business needs.
           </p>
         </div>
@@ -114,15 +114,15 @@ export default function ServicesSection() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#111111] mb-2">
+                <h3 className="text-xl font-bold text-[#1D2F42] mb-2">
                   {service.title}
                 </h3>
-                <p className="text-[#6F6F6F] mb-4 leading-relaxed">
+                <p className="text-[#3d5266] mb-4 leading-relaxed">
                   {service.description}
                 </p>
                 <Link
                   to={service.link}
-                  className="inline-flex items-center gap-2 text-[#D7263D] font-semibold text-sm hover:gap-3 transition-all"
+                  className="inline-flex items-center gap-2 text-[#1D2F42] font-semibold text-sm hover:gap-3 transition-all"
                 >
                   Learn More
                   <ArrowRight className="w-4 h-4" />
@@ -144,12 +144,12 @@ export default function ServicesSection() {
               key={index}
               className="flex items-start gap-4 p-5 bg-white/50 rounded-2xl hover:bg-white hover:shadow-lg transition-all"
             >
-              <div className="w-12 h-12 bg-[#D7263D]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                <item.icon className="w-6 h-6 text-[#D7263D]" />
+              <div className="w-12 h-12 bg-[#1D2F42]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <item.icon className="w-6 h-6 text-[#1D2F42]" />
               </div>
               <div>
-                <h4 className="font-semibold text-[#111111] mb-1">{item.title}</h4>
-                <p className="text-sm text-[#6F6F6F]">{item.desc}</p>
+                <h4 className="font-semibold text-[#1D2F42] mb-1">{item.title}</h4>
+                <p className="text-sm text-[#3d5266]">{item.desc}</p>
               </div>
             </div>
           ))}

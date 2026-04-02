@@ -46,19 +46,19 @@ export default function DashboardPage() {
   const userOrders = getUserOrders(user.id);
 
   return (
-    <main className="min-h-screen bg-[#F6F6F6] pt-24 pb-16">
+    <main className="min-h-screen bg-[#D8D8D0] pt-24 pb-16">
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
           <div>
-            <h1 className="text-3xl font-black text-[#111111] mb-1">
+            <h1 className="text-3xl font-black text-[#1D2F42] mb-1">
               Welcome, {user.name}!
             </h1>
-            <p className="text-[#6F6F6F]">Manage your shipments and orders</p>
+            <p className="text-[#3d5266]">Manage your shipments and orders</p>
           </div>
           <button
             onClick={handleLogout}
-            className="flex items-center gap-2 px-5 py-3 bg-white text-[#D7263D] rounded-xl font-medium hover:bg-red-50 transition-colors w-fit"
+            className="flex items-center gap-2 px-5 py-3 bg-white text-[#1D2F42] rounded-xl font-medium hover:bg-red-50 transition-colors w-fit"
           >
             <LogOut className="w-5 h-5" />
             Logout
@@ -68,32 +68,32 @@ export default function DashboardPage() {
         {/* Stats Cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
           <div className="bg-white rounded-2xl p-6 card-shadow">
-            <div className="w-12 h-12 bg-[#D7263D]/10 rounded-xl flex items-center justify-center mb-4">
-              <Package className="w-6 h-6 text-[#D7263D]" />
+            <div className="w-12 h-12 bg-[#1D2F42]/10 rounded-xl flex items-center justify-center mb-4">
+              <Package className="w-6 h-6 text-[#1D2F42]" />
             </div>
-            <p className="text-3xl font-black text-[#111111]">2</p>
-            <p className="text-sm text-[#6F6F6F]">Active Shipments</p>
+            <p className="text-3xl font-black text-[#1D2F42]">2</p>
+            <p className="text-sm text-[#3d5266]">Active Shipments</p>
           </div>
           <div className="bg-white rounded-2xl p-6 card-shadow">
             <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
               <ShoppingBag className="w-6 h-6 text-blue-500" />
             </div>
-            <p className="text-3xl font-black text-[#111111]">{userOrders.length}</p>
-            <p className="text-sm text-[#6F6F6F]">Total Orders</p>
+            <p className="text-3xl font-black text-[#1D2F42]">{userOrders.length}</p>
+            <p className="text-sm text-[#3d5266]">Total Orders</p>
           </div>
           <div className="bg-white rounded-2xl p-6 card-shadow">
             <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center mb-4">
               <MapPin className="w-6 h-6 text-green-500" />
             </div>
-            <p className="text-3xl font-black text-[#111111]">1</p>
-            <p className="text-sm text-[#6F6F6F]">Delivered</p>
+            <p className="text-3xl font-black text-[#1D2F42]">1</p>
+            <p className="text-sm text-[#3d5266]">Delivered</p>
           </div>
           <div className="bg-white rounded-2xl p-6 card-shadow">
             <div className="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-4">
               <User className="w-6 h-6 text-purple-500" />
             </div>
-            <p className="text-3xl font-black text-[#111111]">Member</p>
-            <p className="text-sm text-[#6F6F6F]">Since 2024</p>
+            <p className="text-3xl font-black text-[#1D2F42]">Member</p>
+            <p className="text-sm text-[#3d5266]">Since 2024</p>
           </div>
         </div>
 
@@ -101,10 +101,10 @@ export default function DashboardPage() {
           {/* Recent Shipments */}
           <div className="bg-white rounded-[24px] p-6 card-shadow">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-xl font-bold text-[#111111]">Recent Shipments</h2>
+              <h2 className="text-xl font-bold text-[#1D2F42]">Recent Shipments</h2>
               <Link
                 to="/tracking"
-                className="flex items-center gap-1 text-[#D7263D] text-sm font-medium hover:underline"
+                className="flex items-center gap-1 text-[#1D2F42] text-sm font-medium hover:underline"
               >
                 Track All
                 <ChevronRight className="w-4 h-4" />
@@ -117,8 +117,8 @@ export default function DashboardPage() {
                   className="flex items-center justify-between p-4 bg-gray-50 rounded-xl"
                 >
                   <div>
-                    <p className="font-semibold text-[#111111]">{shipment.id}</p>
-                    <p className="text-sm text-[#6F6F6F]">
+                    <p className="font-semibold text-[#1D2F42]">{shipment.id}</p>
+                    <p className="text-sm text-[#3d5266]">
                       {shipment.origin} → {shipment.destination}
                     </p>
                   </div>
@@ -130,7 +130,7 @@ export default function DashboardPage() {
                     }`}>
                       {shipment.status}
                     </span>
-                    <p className="text-xs text-[#6F6F6F] mt-1">{shipment.estimatedDelivery}</p>
+                    <p className="text-xs text-[#3d5266] mt-1">{shipment.estimatedDelivery}</p>
                   </div>
                 </div>
               ))}
@@ -140,10 +140,10 @@ export default function DashboardPage() {
           {/* Recent Orders */}
           <div className="bg-white rounded-[24px] p-6 card-shadow">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-xl font-bold text-[#111111]">Recent Orders</h2>
+              <h2 className="text-xl font-bold text-[#1D2F42]">Recent Orders</h2>
               <Link
                 to="/shop"
-                className="flex items-center gap-1 text-[#D7263D] text-sm font-medium hover:underline"
+                className="flex items-center gap-1 text-[#1D2F42] text-sm font-medium hover:underline"
               >
                 Shop More
                 <ChevronRight className="w-4 h-4" />
@@ -157,8 +157,8 @@ export default function DashboardPage() {
                     className="flex items-center justify-between p-4 bg-gray-50 rounded-xl"
                   >
                     <div>
-                      <p className="font-semibold text-[#111111]">Order #{order.id.slice(-6)}</p>
-                      <p className="text-sm text-[#6F6F6F]">
+                      <p className="font-semibold text-[#1D2F42]">Order #{order.id.slice(-6)}</p>
+                      <p className="text-sm text-[#3d5266]">
                         {order.items.length} items • GH₵ {order.total.toLocaleString()}
                       </p>
                     </div>
@@ -176,10 +176,10 @@ export default function DashboardPage() {
               </div>
             ) : (
               <div className="text-center py-10">
-                <p className="text-[#6F6F6F] mb-4">No orders yet</p>
+                <p className="text-[#3d5266] mb-4">No orders yet</p>
                 <Link
                   to="/shop"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#D7263D] text-white rounded-xl font-medium"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#1D2F42] text-white rounded-xl font-medium"
                 >
                   <ShoppingBag className="w-5 h-5" />
                   Start Shopping
@@ -191,23 +191,23 @@ export default function DashboardPage() {
 
         {/* Profile Info */}
         <div className="mt-8 bg-white rounded-[24px] p-6 card-shadow">
-          <h2 className="text-xl font-bold text-[#111111] mb-6">Profile Information</h2>
+          <h2 className="text-xl font-bold text-[#1D2F42] mb-6">Profile Information</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div>
-              <p className="text-sm text-[#6F6F6F] mb-1">Full Name</p>
-              <p className="font-semibold text-[#111111]">{user.name}</p>
+              <p className="text-sm text-[#3d5266] mb-1">Full Name</p>
+              <p className="font-semibold text-[#1D2F42]">{user.name}</p>
             </div>
             <div>
-              <p className="text-sm text-[#6F6F6F] mb-1">Email</p>
-              <p className="font-semibold text-[#111111]">{user.email}</p>
+              <p className="text-sm text-[#3d5266] mb-1">Email</p>
+              <p className="font-semibold text-[#1D2F42]">{user.email}</p>
             </div>
             <div>
-              <p className="text-sm text-[#6F6F6F] mb-1">Phone</p>
-              <p className="font-semibold text-[#111111]">{user.phone || 'Not provided'}</p>
+              <p className="text-sm text-[#3d5266] mb-1">Phone</p>
+              <p className="font-semibold text-[#1D2F42]">{user.phone || 'Not provided'}</p>
             </div>
             <div>
-              <p className="text-sm text-[#6F6F6F] mb-1">Address</p>
-              <p className="font-semibold text-[#111111]">{user.address || 'Not provided'}</p>
+              <p className="text-sm text-[#3d5266] mb-1">Address</p>
+              <p className="font-semibold text-[#1D2F42]">{user.address || 'Not provided'}</p>
             </div>
           </div>
         </div>
@@ -215,3 +215,4 @@ export default function DashboardPage() {
     </main>
   );
 }
+

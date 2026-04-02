@@ -18,7 +18,7 @@ const steps = [
     icon: Truck,
     title: 'We Plan & Pick Up',
     description: 'Our team optimizes the route and schedules collection from your specified location.',
-    color: 'bg-[#D7263D]'
+    color: 'bg-[#1D2F42]'
   },
   {
     number: '03',
@@ -85,14 +85,14 @@ export default function ProcessSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-20 lg:py-32 bg-[#F6F6F6] overflow-hidden"
+      className="relative py-20 lg:py-32 bg-[#D8D8D0] overflow-hidden"
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Steps */}
           <div>
-            <span className="label-text text-[#D7263D] mb-4 block">Our Process</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] mb-8 leading-tight">
+            <span className="label-text text-[#1D2F42] mb-4 block">Our Process</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1D2F42] mb-8 leading-tight">
               REQUEST A QUOTE & BOOK YOUR SHIPMENT
             </h2>
 
@@ -107,10 +107,10 @@ export default function ProcessSection() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="text-xs font-bold text-[#D7263D]">STEP {step.number}</span>
+                      <span className="text-xs font-bold text-[#1D2F42]">STEP {step.number}</span>
                     </div>
-                    <h3 className="text-lg font-bold text-[#111111] mb-1">{step.title}</h3>
-                    <p className="text-sm text-[#6F6F6F] leading-relaxed">{step.description}</p>
+                    <h3 className="text-lg font-bold text-[#1D2F42] mb-1">{step.title}</h3>
+                    <p className="text-sm text-[#3d5266] leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               ))}
@@ -130,7 +130,7 @@ export default function ProcessSection() {
               
               {/* Overlay Badge */}
               <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full">
-                <span className="text-xs font-semibold text-[#111111] uppercase tracking-wider">
+                <span className="text-xs font-semibold text-[#1D2F42] uppercase tracking-wider">
                   Step-by-Step
                 </span>
               </div>
@@ -139,18 +139,18 @@ export default function ProcessSection() {
               <div className="absolute bottom-6 right-6 left-6 bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm text-[#6F6F6F] mb-1">Average Delivery Time</p>
-                    <p className="text-2xl font-black text-[#111111]">5-10 Days</p>
+                    <p className="text-sm text-[#3d5266] mb-1">Average Delivery Time</p>
+                    <p className="text-2xl font-black text-[#1D2F42]">5-10 Days</p>
                   </div>
-                  <div className="w-16 h-16 bg-[#D7263D]/10 rounded-full flex items-center justify-center">
-                    <span className="text-2xl font-bold text-[#D7263D]">USA</span>
+                  <div className="w-16 h-16 bg-[#1D2F42]/10 rounded-full flex items-center justify-center">
+                    <span className="text-2xl font-bold text-[#1D2F42]">USA</span>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Decorative */}
-            <div className="absolute -z-10 -bottom-8 -left-8 w-48 h-48 bg-[#D7263D]/10 rounded-full blur-3xl" />
+            <div className="absolute -z-10 -bottom-8 -left-8 w-48 h-48 bg-[#1D2F42]/10 rounded-full blur-3xl" />
           </div>
         </div>
       </div>

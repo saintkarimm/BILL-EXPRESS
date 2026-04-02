@@ -99,7 +99,7 @@ export default function ProductDetailPage() {
 
   if (!product) {
     return (
-      <main className="min-h-screen bg-[#F6F6F6] pt-24 pb-16 flex items-center justify-center">
+      <main className="min-h-screen bg-[#D8D8D0] pt-24 pb-16 flex items-center justify-center">
         <p>Loading...</p>
       </main>
     );
@@ -124,12 +124,12 @@ export default function ProductDetailPage() {
     .slice(0, 3);
 
   return (
-    <main className="min-h-screen bg-[#F6F6F6] pt-24 pb-16">
+    <main className="min-h-screen bg-[#D8D8D0] pt-24 pb-16">
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Back Button */}
         <button
           onClick={() => navigate(-1)}
-          className="flex items-center gap-2 text-[#6F6F6F] hover:text-[#111111] transition-colors mb-6"
+          className="flex items-center gap-2 text-[#3d5266] hover:text-[#1D2F42] transition-colors mb-6"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to Shop
@@ -148,7 +148,7 @@ export default function ProductDetailPage() {
           {/* Content */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <span className="px-3 py-1 bg-[#D7263D]/10 text-[#D7263D] text-sm font-semibold rounded-full">
+              <span className="px-3 py-1 bg-[#1D2F42]/10 text-[#1D2F42] text-sm font-semibold rounded-full">
                 {product.category}
               </span>
               <div className="flex items-center gap-1">
@@ -157,21 +157,21 @@ export default function ProductDetailPage() {
               </div>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl font-black text-[#111111] mb-4">
+            <h1 className="text-3xl sm:text-4xl font-black text-[#1D2F42] mb-4">
               {product.name}
             </h1>
 
-            <p className="text-lg text-[#6F6F6F] mb-6 leading-relaxed">
+            <p className="text-lg text-[#3d5266] mb-6 leading-relaxed">
               {product.description}
             </p>
 
-            <p className="text-4xl font-black text-[#D7263D] mb-8">
+            <p className="text-4xl font-black text-[#1D2F42] mb-8">
               GH₵ {product.price.toLocaleString()}
             </p>
 
             {/* Quantity */}
             <div className="flex items-center gap-4 mb-8">
-              <span className="text-[#111111] font-medium">Quantity:</span>
+              <span className="text-[#1D2F42] font-medium">Quantity:</span>
               <div className="flex items-center gap-3 bg-white rounded-xl p-1">
                 <button
                   onClick={() => handleQuantityChange(-1)}
@@ -187,21 +187,21 @@ export default function ProductDetailPage() {
                   <Plus className="w-4 h-4" />
                 </button>
               </div>
-              <span className="text-sm text-[#6F6F6F]">{product.stock} available</span>
+              <span className="text-sm text-[#3d5266]">{product.stock} available</span>
             </div>
 
             {/* Actions */}
             <div className="flex flex-wrap gap-4 mb-10">
               <button
                 onClick={handleAddToCart}
-                className="flex-1 min-w-[200px] flex items-center justify-center gap-2 px-8 py-4 bg-[#D7263D] text-white rounded-xl font-semibold hover:bg-[#b51d32] transition-colors"
+                className="flex-1 min-w-[200px] flex items-center justify-center gap-2 px-8 py-4 bg-[#1D2F42] text-white rounded-xl font-semibold hover:bg-[#0f1a25] transition-colors"
               >
                 <ShoppingCart className="w-5 h-5" />
                 Add to Cart
               </button>
               <Link
                 to="/shop"
-                className="flex items-center justify-center gap-2 px-8 py-4 bg-[#111111] text-white rounded-xl font-semibold hover:bg-[#333333] transition-colors"
+                className="flex items-center justify-center gap-2 px-8 py-4 bg-[#1D2F42] text-white rounded-xl font-semibold hover:bg-[#0f1a25] transition-colors"
               >
                 Continue Shopping
               </Link>
@@ -211,10 +211,10 @@ export default function ProductDetailPage() {
             <div className="grid sm:grid-cols-3 gap-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-3 p-4 bg-white rounded-xl">
-                  <feature.icon className="w-5 h-5 text-[#D7263D] flex-shrink-0" />
+                  <feature.icon className="w-5 h-5 text-[#1D2F42] flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-sm text-[#111111]">{feature.title}</p>
-                    <p className="text-xs text-[#6F6F6F]">{feature.desc}</p>
+                    <p className="font-semibold text-sm text-[#1D2F42]">{feature.title}</p>
+                    <p className="text-xs text-[#3d5266]">{feature.desc}</p>
                   </div>
                 </div>
               ))}
@@ -225,7 +225,7 @@ export default function ProductDetailPage() {
         {/* Related Products */}
         {relatedProducts.length > 0 && (
           <div>
-            <h2 className="text-2xl font-bold text-[#111111] mb-6">Related Products</h2>
+            <h2 className="text-2xl font-bold text-[#1D2F42] mb-6">Related Products</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedProducts.map((related) => (
                 <Link
@@ -241,8 +241,8 @@ export default function ProductDetailPage() {
                     />
                   </div>
                   <div className="p-5">
-                    <h3 className="font-bold text-[#111111] mb-2">{related.name}</h3>
-                    <p className="text-[#D7263D] font-black">GH₵ {related.price.toLocaleString()}</p>
+                    <h3 className="font-bold text-[#1D2F42] mb-2">{related.name}</h3>
+                    <p className="text-[#1D2F42] font-black">GH₵ {related.price.toLocaleString()}</p>
                   </div>
                 </Link>
               ))}
@@ -253,3 +253,4 @@ export default function ProductDetailPage() {
     </main>
   );
 }
+

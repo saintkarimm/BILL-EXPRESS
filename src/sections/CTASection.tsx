@@ -51,7 +51,7 @@ export default function CTASection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-20 lg:py-32 bg-[#F6F6F6] overflow-hidden"
+      className="relative py-20 lg:py-32 bg-[#D8D8D0] overflow-hidden"
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -67,7 +67,7 @@ export default function CTASection() {
               />
               
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#D7263D]/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#1D2F42]/80 to-transparent" />
               
               {/* Content on Image */}
               <div className="absolute bottom-8 left-8 text-white">
@@ -77,18 +77,18 @@ export default function CTASection() {
             </div>
 
             {/* Decorative */}
-            <div className="absolute -z-10 -bottom-8 -right-8 w-48 h-48 bg-[#D7263D]/10 rounded-full blur-3xl" />
+            <div className="absolute -z-10 -bottom-8 -right-8 w-48 h-48 bg-[#1D2F42]/10 rounded-full blur-3xl" />
           </div>
 
           {/* Right Content */}
           <div ref={contentRef}>
-            <span className="animate-item label-text text-[#D7263D] mb-4 block">
+            <span className="animate-item label-text text-[#1D2F42] mb-4 block">
               Get a Quote
             </span>
-            <h2 className="animate-item text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] mb-6 leading-tight">
+            <h2 className="animate-item text-3xl sm:text-4xl lg:text-5xl font-black text-[#1D2F42] mb-6 leading-tight">
               REQUEST A FREE QUOTE TODAY
             </h2>
-            <p className="animate-item text-lg text-[#6F6F6F] mb-8 leading-relaxed">
+            <p className="animate-item text-lg text-[#3d5266] mb-8 leading-relaxed">
               No hidden fees. No long forms. Just a clear price and a pickup time that works for you.
               Our team is ready to handle your logistics needs.
             </p>
@@ -96,14 +96,14 @@ export default function CTASection() {
             <div className="animate-item flex flex-wrap gap-4 mb-8">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-[#D7263D] text-white rounded-xl font-semibold text-sm uppercase tracking-wide hover:bg-[#b51d32] hover:translate-y-[-2px] transition-all shadow-lg shadow-[#D7263D]/25"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-[#1D2F42] text-white rounded-xl font-semibold text-sm uppercase tracking-wide hover:bg-[#0f1a25] hover:translate-y-[-2px] transition-all shadow-lg shadow-[#1D2F42]/25"
               >
                 Get Your Quote
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a
                 href="tel:+233257721337"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#111111] border-2 border-[#111111] rounded-xl font-semibold text-sm uppercase tracking-wide hover:bg-[#111111] hover:text-white transition-all"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#1D2F42] border-2 border-[#1D2F42] rounded-xl font-semibold text-sm uppercase tracking-wide hover:bg-[#1D2F42] hover:text-white transition-all"
               >
                 <Phone className="w-5 h-5" />
                 Call Us
@@ -113,12 +113,12 @@ export default function CTASection() {
             {/* Contact Info */}
             <div className="animate-item flex flex-col sm:flex-row gap-6 pt-8 border-t border-gray-200">
               <div>
-                <p className="text-sm text-[#6F6F6F] mb-1">Phone</p>
-                <p className="font-semibold text-[#111111]">025 772 1337</p>
+                <p className="text-sm text-[#3d5266] mb-1">Phone</p>
+                <p className="font-semibold text-[#1D2F42]">025 772 1337</p>
               </div>
               <div>
-                <p className="text-sm text-[#6F6F6F] mb-1">Email</p>
-                <p className="font-semibold text-[#111111]">info@hayyugoldcoast.com</p>
+                <p className="text-sm text-[#3d5266] mb-1">Email</p>
+                <p className="font-semibold text-[#1D2F42]">info@hayyugoldcoast.com</p>
               </div>
             </div>
           </div>

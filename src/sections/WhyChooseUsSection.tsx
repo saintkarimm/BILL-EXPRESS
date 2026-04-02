@@ -60,19 +60,19 @@ export default function WhyChooseUsSection() {
     <section
       ref={sectionRef}
       id="about"
-      className="relative py-20 lg:py-32 bg-[#F6F6F6] overflow-hidden"
+      className="relative py-20 lg:py-32 bg-[#D8D8D0] overflow-hidden"
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
           <div ref={contentRef}>
-            <span className="animate-item label-text text-[#D7263D] mb-4 block">
+            <span className="animate-item label-text text-[#1D2F42] mb-4 block">
               Why Choose Us
             </span>
-            <h2 className="animate-item text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] mb-6 leading-tight">
+            <h2 className="animate-item text-3xl sm:text-4xl lg:text-5xl font-black text-[#1D2F42] mb-6 leading-tight">
               WE MAKE THINGS EASY & HIGHLY PROFITABLE
             </h2>
-            <p className="animate-item text-lg text-[#6F6F6F] mb-8 leading-relaxed">
+            <p className="animate-item text-lg text-[#3d5266] mb-8 leading-relaxed">
               Transparent pricing, dedicated account support, and a network built for speed—
               so you save time and reduce overhead. Our logistics solutions are designed to 
               help your business grow.
@@ -82,10 +82,10 @@ export default function WhyChooseUsSection() {
             <div className="animate-item grid sm:grid-cols-2 gap-4 mb-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="w-5 h-5 bg-[#D7263D] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 bg-[#1D2F42] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3 h-3 text-white" />
                   </div>
-                  <span className="text-sm text-[#111111]">{benefit}</span>
+                  <span className="text-sm text-[#1D2F42]">{benefit}</span>
                 </div>
               ))}
             </div>
@@ -102,8 +102,8 @@ export default function WhyChooseUsSection() {
                 ))}
               </div>
               <div>
-                <p className="text-sm font-semibold text-[#111111]">12K+ Happy Customers</p>
-                <p className="text-xs text-[#6F6F6F]">Trust us with their logistics</p>
+                <p className="text-sm font-semibold text-[#1D2F42]">12K+ Happy Customers</p>
+                <p className="text-xs text-[#3d5266]">Trust us with their logistics</p>
               </div>
             </div>
           </div>
@@ -120,14 +120,14 @@ export default function WhyChooseUsSection() {
               />
               
               {/* Play Button */}
-              <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-[#D7263D] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+              <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-[#1D2F42] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
                 <Play className="w-8 h-8 text-white ml-1" fill="white" />
               </button>
 
               {/* Stats Card */}
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm p-5 rounded-2xl shadow-lg">
-                <p className="text-3xl font-black text-[#D7263D]">15+</p>
-                <p className="text-sm text-[#6F6F6F]">Years Experience</p>
+                <p className="text-3xl font-black text-[#1D2F42]">15+</p>
+                <p className="text-sm text-[#3d5266]">Years Experience</p>
               </div>
             </div>
 
@@ -143,7 +143,7 @@ export default function WhyChooseUsSection() {
             </div>
 
             {/* Decorative */}
-            <div className="absolute -z-10 -top-8 -right-8 w-48 h-48 bg-[#D7263D]/10 rounded-full blur-3xl" />
+            <div className="absolute -z-10 -top-8 -right-8 w-48 h-48 bg-[#1D2F42]/10 rounded-full blur-3xl" />
           </div>
         </div>
       </div>

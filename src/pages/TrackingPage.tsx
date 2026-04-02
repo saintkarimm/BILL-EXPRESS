@@ -81,14 +81,14 @@ export default function TrackingPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#F6F6F6] pt-24 pb-16">
+    <main className="min-h-screen bg-[#D8D8D0] pt-24 pb-16">
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <h1 className="text-3xl sm:text-4xl font-black text-[#111111] mb-4">
+          <h1 className="text-3xl sm:text-4xl font-black text-[#1D2F42] mb-4">
             Track Your Shipment
           </h1>
-          <p className="text-[#6F6F6F]">
+          <p className="text-[#3d5266]">
             Enter your tracking number to get real-time updates on your package
           </p>
         </div>
@@ -103,13 +103,13 @@ export default function TrackingPage() {
                 placeholder="Enter tracking number (e.g., BE123456)"
                 value={trackingNumber}
                 onChange={(e) => setTrackingNumber(e.target.value)}
-                className="w-full pl-12 pr-4 py-4 bg-white rounded-xl border-0 shadow-sm focus:ring-2 focus:ring-[#D7263D] text-lg"
+                className="w-full pl-12 pr-4 py-4 bg-white rounded-xl border-0 shadow-sm focus:ring-2 focus:ring-[#1D2F42] text-lg"
               />
             </div>
             <button
               type="submit"
               disabled={isSearching}
-              className="px-8 py-4 bg-[#D7263D] text-white rounded-xl font-semibold hover:bg-[#b51d32] transition-colors disabled:opacity-50"
+              className="px-8 py-4 bg-[#1D2F42] text-white rounded-xl font-semibold hover:bg-[#0f1a25] transition-colors disabled:opacity-50"
             >
               {isSearching ? 'Searching...' : 'Track'}
             </button>
@@ -123,44 +123,44 @@ export default function TrackingPage() {
             <div className="bg-white rounded-[24px] p-6 lg:p-8 card-shadow mb-8">
               <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
                 <div>
-                  <p className="text-sm text-[#6F6F6F] mb-1">Tracking Number</p>
-                  <p className="text-2xl font-black text-[#111111]">{shipment.trackingNumber}</p>
+                  <p className="text-sm text-[#3d5266] mb-1">Tracking Number</p>
+                  <p className="text-2xl font-black text-[#1D2F42]">{shipment.trackingNumber}</p>
                 </div>
-                <div className="px-4 py-2 bg-[#D7263D]/10 text-[#D7263D] rounded-full font-semibold">
+                <div className="px-4 py-2 bg-[#1D2F42]/10 text-[#1D2F42] rounded-full font-semibold">
                   {shipment.status}
                 </div>
               </div>
 
               <div className="grid sm:grid-cols-3 gap-6">
                 <div>
-                  <p className="text-sm text-[#6F6F6F] mb-1">From</p>
-                  <p className="font-semibold text-[#111111]">{shipment.origin}</p>
+                  <p className="text-sm text-[#3d5266] mb-1">From</p>
+                  <p className="font-semibold text-[#1D2F42]">{shipment.origin}</p>
                 </div>
                 <div>
-                  <p className="text-sm text-[#6F6F6F] mb-1">To</p>
-                  <p className="font-semibold text-[#111111]">{shipment.destination}</p>
+                  <p className="text-sm text-[#3d5266] mb-1">To</p>
+                  <p className="font-semibold text-[#1D2F42]">{shipment.destination}</p>
                 </div>
                 <div>
-                  <p className="text-sm text-[#6F6F6F] mb-1">Estimated Delivery</p>
-                  <p className="font-semibold text-[#111111]">{shipment.estimatedDelivery}</p>
+                  <p className="text-sm text-[#3d5266] mb-1">Estimated Delivery</p>
+                  <p className="font-semibold text-[#1D2F42]">{shipment.estimatedDelivery}</p>
                 </div>
               </div>
             </div>
 
             {/* Timeline */}
             <div className="bg-white rounded-[24px] p-6 lg:p-8 card-shadow">
-              <h2 className="text-xl font-bold text-[#111111] mb-6">Shipment History</h2>
+              <h2 className="text-xl font-bold text-[#1D2F42] mb-6">Shipment History</h2>
               <div className="space-y-0">
                 {shipment.history.map((event, index) => (
                   <div key={index} className="relative pl-10 pb-8 last:pb-0">
                     {/* Timeline Line */}
                     {index < shipment.history.length - 1 && (
-                      <div className={`absolute left-[18px] top-10 w-0.5 h-full ${event.completed ? 'bg-[#D7263D]' : 'bg-gray-200'}`} />
+                      <div className={`absolute left-[18px] top-10 w-0.5 h-full ${event.completed ? 'bg-[#1D2F42]' : 'bg-gray-200'}`} />
                     )}
                     
                     {/* Icon */}
                     <div className={`absolute left-0 top-0 w-9 h-9 rounded-full flex items-center justify-center ${
-                      event.completed ? 'bg-[#D7263D]' : 'bg-gray-200'
+                      event.completed ? 'bg-[#1D2F42]' : 'bg-gray-200'
                     }`}>
                       <event.icon className={`w-5 h-5 ${event.completed ? 'text-white' : 'text-gray-400'}`} />
                     </div>
@@ -168,14 +168,14 @@ export default function TrackingPage() {
                     {/* Content */}
                     <div>
                       <div className="flex flex-wrap items-center gap-3 mb-1">
-                        <h3 className={`font-semibold ${event.completed ? 'text-[#111111]' : 'text-gray-400'}`}>
+                        <h3 className={`font-semibold ${event.completed ? 'text-[#1D2F42]' : 'text-gray-400'}`}>
                           {event.status}
                         </h3>
-                        <span className={`text-sm ${event.completed ? 'text-[#6F6F6F]' : 'text-gray-400'}`}>
+                        <span className={`text-sm ${event.completed ? 'text-[#3d5266]' : 'text-gray-400'}`}>
                           {event.timestamp}
                         </span>
                       </div>
-                      <p className={`text-sm ${event.completed ? 'text-[#6F6F6F]' : 'text-gray-400'}`}>
+                      <p className={`text-sm ${event.completed ? 'text-[#3d5266]' : 'text-gray-400'}`}>
                         {event.location} • {event.description}
                       </p>
                     </div>
@@ -190,7 +190,7 @@ export default function TrackingPage() {
         {!shipment && (
           <div className="max-w-xl mx-auto text-center">
             <div className="bg-white rounded-[24px] p-6 card-shadow">
-              <p className="text-[#6F6F6F] mb-4">Try these demo tracking numbers:</p>
+              <p className="text-[#3d5266] mb-4">Try these demo tracking numbers:</p>
               <div className="flex flex-wrap justify-center gap-3">
                 <button
                   onClick={() => {
@@ -216,3 +216,4 @@ export default function TrackingPage() {
     </main>
   );
 }
+

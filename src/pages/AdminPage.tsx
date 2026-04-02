@@ -127,15 +127,15 @@ export default function AdminPage() {
   const totalProducts = products.length;
 
   return (
-    <main className="min-h-screen bg-[#F6F6F6] pt-24 pb-16">
+    <main className="min-h-screen bg-[#D8D8D0] pt-24 pb-16">
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
           <div>
-            <h1 className="text-3xl font-black text-[#111111] mb-1">
+            <h1 className="text-3xl font-black text-[#1D2F42] mb-1">
               Admin Dashboard
             </h1>
-            <p className="text-[#6F6F6F]">Manage products, orders, and shipments</p>
+            <p className="text-[#3d5266]">Manage products, orders, and shipments</p>
           </div>
         </div>
 
@@ -152,8 +152,8 @@ export default function AdminPage() {
               onClick={() => setActiveTab(tab.id as any)}
               className={`flex items-center gap-2 px-5 py-3 rounded-xl font-medium transition-colors ${
                 activeTab === tab.id
-                  ? 'bg-[#D7263D] text-white'
-                  : 'bg-white text-[#111111] hover:bg-gray-100'
+                  ? 'bg-[#1D2F42] text-white'
+                  : 'bg-white text-[#1D2F42] hover:bg-gray-100'
               }`}
             >
               <tab.icon className="w-5 h-5" />
@@ -166,32 +166,32 @@ export default function AdminPage() {
         {activeTab === 'dashboard' && (
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="bg-white rounded-2xl p-6 card-shadow">
-              <div className="w-12 h-12 bg-[#D7263D]/10 rounded-xl flex items-center justify-center mb-4">
-                <TrendingUp className="w-6 h-6 text-[#D7263D]" />
+              <div className="w-12 h-12 bg-[#1D2F42]/10 rounded-xl flex items-center justify-center mb-4">
+                <TrendingUp className="w-6 h-6 text-[#1D2F42]" />
               </div>
-              <p className="text-3xl font-black text-[#111111]">GH₵ {totalRevenue.toLocaleString()}</p>
-              <p className="text-sm text-[#6F6F6F]">Total Revenue</p>
+              <p className="text-3xl font-black text-[#1D2F42]">GH₵ {totalRevenue.toLocaleString()}</p>
+              <p className="text-sm text-[#3d5266]">Total Revenue</p>
             </div>
             <div className="bg-white rounded-2xl p-6 card-shadow">
               <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
                 <ShoppingBag className="w-6 h-6 text-blue-500" />
               </div>
-              <p className="text-3xl font-black text-[#111111]">{totalOrders}</p>
-              <p className="text-sm text-[#6F6F6F]">Total Orders</p>
+              <p className="text-3xl font-black text-[#1D2F42]">{totalOrders}</p>
+              <p className="text-sm text-[#3d5266]">Total Orders</p>
             </div>
             <div className="bg-white rounded-2xl p-6 card-shadow">
               <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center mb-4">
                 <Package className="w-6 h-6 text-green-500" />
               </div>
-              <p className="text-3xl font-black text-[#111111]">{totalProducts}</p>
-              <p className="text-sm text-[#6F6F6F]">Products</p>
+              <p className="text-3xl font-black text-[#1D2F42]">{totalProducts}</p>
+              <p className="text-sm text-[#3d5266]">Products</p>
             </div>
             <div className="bg-white rounded-2xl p-6 card-shadow">
               <div className="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-4">
                 <Users className="w-6 h-6 text-purple-500" />
               </div>
-              <p className="text-3xl font-black text-[#111111]">150</p>
-              <p className="text-sm text-[#6F6F6F]">Customers</p>
+              <p className="text-3xl font-black text-[#1D2F42]">150</p>
+              <p className="text-sm text-[#3d5266]">Customers</p>
             </div>
           </div>
         )}
@@ -200,7 +200,7 @@ export default function AdminPage() {
         {activeTab === 'products' && (
           <div className="bg-white rounded-[24px] p-6 card-shadow">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-xl font-bold text-[#111111]">Products</h2>
+              <h2 className="text-xl font-bold text-[#1D2F42]">Products</h2>
               <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
                 <DialogTrigger asChild>
                   <button
@@ -208,7 +208,7 @@ export default function AdminPage() {
                       setEditingProduct(null);
                       setNewProduct({ name: '', description: '', price: 0, category: 'Phones', stock: 0 });
                     }}
-                    className="flex items-center gap-2 px-5 py-3 bg-[#D7263D] text-white rounded-xl font-medium hover:bg-[#b51d32] transition-colors"
+                    className="flex items-center gap-2 px-5 py-3 bg-[#1D2F42] text-white rounded-xl font-medium hover:bg-[#0f1a25] transition-colors"
                   >
                     <Plus className="w-5 h-5" />
                     Add Product
@@ -225,7 +225,7 @@ export default function AdminPage() {
                         type="text"
                         value={newProduct.name}
                         onChange={(e) => setNewProduct({ ...newProduct, name: e.target.value })}
-                        className="w-full px-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#D7263D]"
+                        className="w-full px-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#1D2F42]"
                         placeholder="Enter product name"
                       />
                     </div>
@@ -234,7 +234,7 @@ export default function AdminPage() {
                       <textarea
                         value={newProduct.description}
                         onChange={(e) => setNewProduct({ ...newProduct, description: e.target.value })}
-                        className="w-full px-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#D7263D]"
+                        className="w-full px-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#1D2F42]"
                         placeholder="Enter description"
                         rows={3}
                       />
@@ -246,7 +246,7 @@ export default function AdminPage() {
                           type="number"
                           value={newProduct.price}
                           onChange={(e) => setNewProduct({ ...newProduct, price: Number(e.target.value) })}
-                          className="w-full px-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#D7263D]"
+                          className="w-full px-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#1D2F42]"
                           placeholder="0"
                         />
                       </div>
@@ -256,7 +256,7 @@ export default function AdminPage() {
                           type="number"
                           value={newProduct.stock}
                           onChange={(e) => setNewProduct({ ...newProduct, stock: Number(e.target.value) })}
-                          className="w-full px-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#D7263D]"
+                          className="w-full px-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#1D2F42]"
                           placeholder="0"
                         />
                       </div>
@@ -266,7 +266,7 @@ export default function AdminPage() {
                       <select
                         value={newProduct.category}
                         onChange={(e) => setNewProduct({ ...newProduct, category: e.target.value })}
-                        className="w-full px-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#D7263D]"
+                        className="w-full px-4 py-3 bg-gray-50 rounded-xl border-0 focus:ring-2 focus:ring-[#1D2F42]"
                       >
                         <option value="Phones">Phones</option>
                         <option value="Laptops">Laptops</option>
@@ -276,7 +276,7 @@ export default function AdminPage() {
                     </div>
                     <button
                       onClick={editingProduct ? handleUpdateProduct : handleAddProduct}
-                      className="w-full py-3 bg-[#D7263D] text-white rounded-xl font-semibold hover:bg-[#b51d32] transition-colors"
+                      className="w-full py-3 bg-[#1D2F42] text-white rounded-xl font-semibold hover:bg-[#0f1a25] transition-colors"
                     >
                       {editingProduct ? 'Update Product' : 'Add Product'}
                     </button>
@@ -289,11 +289,11 @@ export default function AdminPage() {
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-100">
-                    <th className="text-left py-3 px-4 font-semibold text-[#111111]">Product</th>
-                    <th className="text-left py-3 px-4 font-semibold text-[#111111]">Category</th>
-                    <th className="text-left py-3 px-4 font-semibold text-[#111111]">Price</th>
-                    <th className="text-left py-3 px-4 font-semibold text-[#111111]">Stock</th>
-                    <th className="text-right py-3 px-4 font-semibold text-[#111111]">Actions</th>
+                    <th className="text-left py-3 px-4 font-semibold text-[#1D2F42]">Product</th>
+                    <th className="text-left py-3 px-4 font-semibold text-[#1D2F42]">Category</th>
+                    <th className="text-left py-3 px-4 font-semibold text-[#1D2F42]">Price</th>
+                    <th className="text-left py-3 px-4 font-semibold text-[#1D2F42]">Stock</th>
+                    <th className="text-right py-3 px-4 font-semibold text-[#1D2F42]">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -306,14 +306,14 @@ export default function AdminPage() {
                             alt={product.name}
                             className="w-12 h-12 rounded-lg object-cover"
                           />
-                          <span className="font-medium text-[#111111]">{product.name}</span>
+                          <span className="font-medium text-[#1D2F42]">{product.name}</span>
                         </div>
                       </td>
-                      <td className="py-4 px-4 text-[#6F6F6F]">{product.category}</td>
-                      <td className="py-4 px-4 font-semibold text-[#D7263D]">
+                      <td className="py-4 px-4 text-[#3d5266]">{product.category}</td>
+                      <td className="py-4 px-4 font-semibold text-[#1D2F42]">
                         GH₵ {product.price.toLocaleString()}
                       </td>
-                      <td className="py-4 px-4 text-[#6F6F6F]">{product.stock}</td>
+                      <td className="py-4 px-4 text-[#3d5266]">{product.stock}</td>
                       <td className="py-4 px-4 text-right">
                         <div className="flex items-center justify-end gap-2">
                           <button
@@ -341,7 +341,7 @@ export default function AdminPage() {
         {/* Orders Tab */}
         {activeTab === 'orders' && (
           <div className="bg-white rounded-[24px] p-6 card-shadow">
-            <h2 className="text-xl font-bold text-[#111111] mb-6">Recent Orders</h2>
+            <h2 className="text-xl font-bold text-[#1D2F42] mb-6">Recent Orders</h2>
             {orders.length > 0 ? (
               <div className="space-y-4">
                 {orders.map((order) => (
@@ -350,13 +350,13 @@ export default function AdminPage() {
                     className="flex flex-wrap items-center justify-between p-4 bg-gray-50 rounded-xl"
                   >
                     <div>
-                      <p className="font-semibold text-[#111111]">Order #{order.id.slice(-6)}</p>
-                      <p className="text-sm text-[#6F6F6F]">
+                      <p className="font-semibold text-[#1D2F42]">Order #{order.id.slice(-6)}</p>
+                      <p className="text-sm text-[#3d5266]">
                         {order.items.length} items • {new Date(order.createdAt).toLocaleDateString()}
                       </p>
                     </div>
                     <div className="flex items-center gap-4">
-                      <p className="font-bold text-[#D7263D]">GH₵ {order.total.toLocaleString()}</p>
+                      <p className="font-bold text-[#1D2F42]">GH₵ {order.total.toLocaleString()}</p>
                       <span className={`px-3 py-1 rounded-full text-xs font-semibold capitalize ${
                         order.status === 'delivered'
                           ? 'bg-green-100 text-green-600'
@@ -371,7 +371,7 @@ export default function AdminPage() {
                 ))}
               </div>
             ) : (
-              <p className="text-center text-[#6F6F6F] py-10">No orders yet</p>
+              <p className="text-center text-[#3d5266] py-10">No orders yet</p>
             )}
           </div>
         )}
@@ -379,7 +379,7 @@ export default function AdminPage() {
         {/* Shipments Tab */}
         {activeTab === 'shipments' && (
           <div className="bg-white rounded-[24px] p-6 card-shadow">
-            <h2 className="text-xl font-bold text-[#111111] mb-6">Active Shipments</h2>
+            <h2 className="text-xl font-bold text-[#1D2F42] mb-6">Active Shipments</h2>
             <div className="space-y-4">
               {[
                 { id: 'BE123456', from: 'New York, USA', to: 'Accra, Ghana', status: 'In Transit', date: '2024-03-20' },
@@ -391,11 +391,11 @@ export default function AdminPage() {
                   className="flex flex-wrap items-center justify-between p-4 bg-gray-50 rounded-xl"
                 >
                   <div>
-                    <p className="font-semibold text-[#111111]">{shipment.id}</p>
-                    <p className="text-sm text-[#6F6F6F]">{shipment.from} → {shipment.to}</p>
+                    <p className="font-semibold text-[#1D2F42]">{shipment.id}</p>
+                    <p className="text-sm text-[#3d5266]">{shipment.from} → {shipment.to}</p>
                   </div>
                   <div className="flex items-center gap-4">
-                    <p className="text-sm text-[#6F6F6F]">{shipment.date}</p>
+                    <p className="text-sm text-[#3d5266]">{shipment.date}</p>
                     <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                       shipment.status === 'Delivered'
                         ? 'bg-green-100 text-green-600'
@@ -413,3 +413,4 @@ export default function AdminPage() {
     </main>
   );
 }
+

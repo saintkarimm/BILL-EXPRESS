@@ -66,30 +66,30 @@ export default function FAQSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-20 lg:py-32 bg-[#F6F6F6]"
+      className="relative py-20 lg:py-32 bg-[#D8D8D0]"
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left Content */}
           <div ref={contentRef}>
-            <span className="animate-item label-text text-[#D7263D] mb-4 block">
+            <span className="animate-item label-text text-[#1D2F42] mb-4 block">
               FAQ
             </span>
-            <h2 className="animate-item text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] mb-6 leading-tight">
+            <h2 className="animate-item text-3xl sm:text-4xl lg:text-5xl font-black text-[#1D2F42] mb-6 leading-tight">
               FREQUENTLY ASKED QUESTIONS
             </h2>
-            <p className="animate-item text-lg text-[#6F6F6F] mb-8 leading-relaxed">
+            <p className="animate-item text-lg text-[#3d5266] mb-8 leading-relaxed">
               Everything you need to know about shipping, tracking, and our services.
               Can not find what you are looking for? Contact us directly.
             </p>
 
             <div className="animate-item flex items-center gap-4 p-5 bg-white rounded-2xl card-shadow">
-              <div className="w-12 h-12 bg-[#D7263D]/10 rounded-xl flex items-center justify-center">
-                <span className="text-xl font-bold text-[#D7263D]">?</span>
+              <div className="w-12 h-12 bg-[#1D2F42]/10 rounded-xl flex items-center justify-center">
+                <span className="text-xl font-bold text-[#1D2F42]">?</span>
               </div>
               <div>
-                <p className="font-semibold text-[#111111]">Still have questions?</p>
-                <p className="text-sm text-[#6F6F6F]">Contact us at 025 772 1337</p>
+                <p className="font-semibold text-[#1D2F42]">Still have questions?</p>
+                <p className="text-sm text-[#3d5266]">Contact us at 025 772 1337</p>
               </div>
             </div>
           </div>
@@ -103,10 +103,10 @@ export default function FAQSection() {
                   value={`item-${index}`}
                   className="bg-white rounded-2xl px-6 border border-gray-100 overflow-hidden"
                 >
-                  <AccordionTrigger className="text-left font-semibold text-[#111111] hover:no-underline py-5">
+                  <AccordionTrigger className="text-left font-semibold text-[#1D2F42] hover:no-underline py-5">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-[#6F6F6F] pb-5 leading-relaxed">
+                  <AccordionContent className="text-[#3d5266] pb-5 leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
