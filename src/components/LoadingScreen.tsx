@@ -9,8 +9,8 @@ export default function LoadingScreen({ onLoadingComplete }: LoadingScreenProps)
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    // Simulate loading progress over 2 seconds
-    const duration = 2000; // 2 seconds
+    // Simulate loading progress over 4 seconds
+    const duration = 4000; // 4 seconds
     const interval = 20; // Update every 20ms
     const increment = 100 / (duration / interval);
 
