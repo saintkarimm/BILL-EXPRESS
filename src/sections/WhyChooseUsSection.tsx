@@ -111,9 +111,12 @@ export default function WhyChooseUsSection() {
           {/* Right Video */}
           <div ref={imageRef} className="relative">
             <div className="relative rounded-[28px] overflow-hidden shadow-2xl">
-              <img
-                src="/video.gif"
-                alt="Warehouse operations"
+              <video
+                src="/video.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />
               
