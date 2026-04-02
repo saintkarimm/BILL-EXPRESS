@@ -13,6 +13,7 @@ import ContactPage from './pages/ContactPage';
 import CartPage from './pages/CartPage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
+import LoadingScreen from './components/LoadingScreen';
 import WhatsAppButton from './components/WhatsAppButton';
 import Chatbot from './components/Chatbot';
 import { AuthProvider } from './contexts/AuthContext';
@@ -21,6 +22,7 @@ import './App.css';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,11 +32,16 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
+
   return (
     <AuthProvider>
       <CartProvider>
         <Router>
           <div className="min-h-screen bg-[#D8D8D0]">
+            {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />}
             <Navigation scrollY={scrollY} />
             <Routes>
               <Route path="/" element={<HomePage />} />
