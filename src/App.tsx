@@ -11,6 +11,8 @@ import AdminPage from './pages/AdminPage';
 import LoginPage from './pages/LoginPage';
 import ContactPage from './pages/ContactPage';
 import CartPage from './pages/CartPage';
+import AboutPage from './pages/AboutPage';
+import ServicesPage from './pages/ServicesPage';
 import WhatsAppButton from './components/WhatsAppButton';
 import Chatbot from './components/Chatbot';
 import { AuthProvider } from './contexts/AuthContext';
@@ -44,6 +46,8 @@ function App() {
               <Route path="/login" element={<LoginPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/cart" element={<CartPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/services" element={<ServicesPage />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
             <WhatsAppButton />

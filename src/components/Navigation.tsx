@@ -36,8 +36,8 @@ export default function Navigation({ scrollY }: NavigationProps) {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/#about' },
-    { name: 'Services', href: '/#services' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/services' },
     { name: 'Shop', href: '/shop' },
     { name: 'Tracking', href: '/tracking' },
     { name: 'Contact', href: '/contact' },
